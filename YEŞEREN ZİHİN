@@ -1,0 +1,426 @@
+----------------HTML-----------------
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  
+  <title>Yeşeren Zihin - Tuğçe Ceylan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <style>
+    main > section { display: none; }
+    main > section.active { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="Yeşeren Zihin Logosu" class="logo" />
+     <div style="text-align: center; margin: 10px 0;"></div>
+    <h1>Yeseren Zihin</h1>
+    <p>Çocuklar için saglıklı bir zihin dünyası</p>
+     <div style="text-align: center; margin: 10px 0;"></div>
+        <button onclick="document.getElementById('bg-music').play()"><b>Melodiyi Başlatmaya Ne Dersin</b></button>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="#" onclick="showSection('home')">Anasayfa</a></li>
+      <li><a href="#" onclick="showSection('about')">Hakkımızda</a></li>
+      <li><a href="#" onclick="showSection('services')">Hizmetler</a></li>
+      <li><a href="#" onclick="showSection('pedagog')">Pedagog</a></li>
+      <li><a href="#" onclick="showSection('appointment')">Randevu Al</a></li>
+      <li><a href="#" onclick="showSection('memory')">Hatıralar</a></li>
+      <li><a href="#" onclick="showSection('contact')">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <section id="home" class="page active">
+      <h2 style="text-align: center;">Hos Geldiniz!</h2>
+      <p style="text-align: center;">Yeseren Zihin'e hos geldiniz! Çocuklarımızın mutlulugu ve gelisimi için birlikte çalısıyoruz.</p>
+      <div class="home-images">
+        <img src="cocuk1.jpg" alt="Çocuk Resmi 1" />
+        <img src="cocuk2.jpg" alt="Çocuk Resmi 2" />
+        <img src="cocuk3.jpg" alt="Çocuk Resmi 3" />
+      </div>
+    </section>
+
+    <section id="about" class="page">
+      <h2>Hakkımızda</h2>
+      <p>Yeşeren Zihin, çocukların ruhsal ve duygusal gelişimini desteklemek amacıyla oyun terapisi,
+         bireysel danışmanlık ve aile rehberliği gibi profesyonel hizmetler sunar. Çocukların kendilerini
+          güvende ve değerli hissetmeleri için özel olarak tasarlanmış seanslarla, gelişim süreci bireysel
+           ihtiyaçlara göre şekillendirilir. Eğlenceli aktiviteler, yaratıcı oyunlar ve sosyal beceri 
+           çalışmaları sayesinde çocukların özgüveni artar, duygularını ifade etmeleri kolaylaşır.
+            Böylece hem zihinsel hem duygusal gelişim zenginleşir, çocuklar potansiyellerini daha 
+            sağlıklı bir şekilde ortaya koyabilir.</p>
+    <img src="pedagog ofis.jpg" alt="Ofis Görüntümüz"class="ofis-gorsel">
+    </section>
+
+    <section id="services" class="page">
+      <h2>Hizmetlerimiz</h2>
+      <ul>
+        <li><b>Oyun Terapisi Eğitimi:</b>Oyun terapisti olmak isteyen kişiler için hazırlanmış bir online eğitimdir.
+Bu eğitim programı aracılığıyla kişiler, oyun terapisi mesleğini yapabilir hale gelmektedir.
+Oyun terapisinin kullanım alanlarını, farklı oyun terapisi yöntemlerini, oyun terapisini uygularken dikkat 
+edilmesi gerekenleri vb. öğrenmektedir.</li>
+<img  src="oyunterapisi.jpg" alt="Oyun Terapisi Görseli" >
+        <li><b>Gelişimsel Takip:</b>Çocuğun fiziksel, bilişsel, duygusal ve sosyal gelişimini düzenli olarak izlemek 
+ve değerlendirmek anlamına gelir. Bu süreç, doğumdan başlayarak çocukluk dönemi boyunca devam eder. Gelişim takibi
+ için, çocuğun yaşına uygun gelişim kilometre taşlarına (ilk adımlarını atma, ilk kelimelerini söyleme, sosyal 
+etkileşimde bulunma vb.) dikkat edilmesi gerekmektedir. Ayrıca, düzenli sağlık kontrolleri ve gelişim taramaları,
+ çocuğun gelişimindeki herhangi bir gecikme veya anormalliği belirlemede önemli rol oynar.</li>
+ <img src="çocukgelişimtakip.jpg" alt="Çocuk Gelişim Görseli"> 
+        <li><b>Aile Danışmanlığı:</b>Tüm aile üyelerinin (anne, baba, kardeş, bakım veren birincil yakınlar vb.) sürece katılması daha hızlı 
+ve işlevsel şekilde çözüm alabilmeyi sağlamaktadır. Çocukların yaşadığı güçlüklerde onlara destek olabilmek,
+ çocukların sağlıklı kişilik gelişimi ve benlik algısı açısından da oldukça önemlidir.</li>
+ <img src="aile danışmanlığı.jpg" alt="Aile Danışmanlığı Görseli">
+      </ul>
+    </section>
+
+    <section id="pedagog" class="page">
+      <h2>Pedagog: Tuğçe Ceylan</h2>
+      <div class="pedagog-content">
+        <img src="pedagog.jpg" alt="Tuğçe Ceylan" class="pedagog-image" />
+        <p>
+          Uzman Pedagog <b>Tuğçe Ceylan</b>, çocuk gelişimi ve ruh sağlığı alanında uzmanlaşmış olup,
+          uzun yıllardır bu alanda danışanlarına destek vermektedir. Her çocuğun bireysel ihtiyaçlarına göre
+          şekillenen danışmanlık sürecinde; eğlenceli, güvenli ve destekleyici bir ortam sunarak çocukların
+          duygusal, sosyal ve akademik gelişimlerine katkı sağlamaktadır.
+        </p>
+      </div>
+    </section>
+
+    <section id="appointment" class="city">
+      <h2>Randevu Oluştur</h2>
+      <form id="appointmentForm">
+        <label for="name">Ad Soyad:</label>
+        <input type="text" id="name" required />
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" required />
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" required />
+        <label for="date">Tarih Seç:</label>
+        <input type="date" id="date" required />
+        <label for="time">Saat Seç:</label>
+        <input type="time" id="time" required />
+        <button type="submit">Randevu Al</button>
+      </form>
+      <p id="confirmation" style="text-align:center; color: green; font-weight: bold; display: none;">
+        Randevunuz başarıyla oluşturuldu!
+      </p>
+    </section>
+
+    <section id="memory" class="page">
+      <h2>Hatıralarımız</h2>
+      <p>Danışanlarımızın sevgi dolu anlarından küçük kareler.</p>
+      <div class="memory-gallery">
+        <div class="memory-card">
+          <img src="memory1.jpg" alt="Hatıra 1" />
+          <p>Oyun Terapisi Sırasında</p>
+        </div>
+        <div class="memory-card">
+          <img src="memory2.jpg" alt="Hatıra 2" />
+          <p>Mutlu Anlar</p>
+        </div>
+        <div class="memory-card">
+          <img src="memory3.jpg" alt="Hatıra 3" />
+          <p>Başarı Kutlaması</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="city">
+      <h2>İletişim</h2>
+      <p>Tuğçe Ceylan - Pedagog</p>
+      <p>Telefon: +90 552 886 4819</p>
+      <p>E-posta: sepetcitugce0403@gmail.com</p>
+    </section>
+  </main>
+
+  <!-- WhatsApp ile iletişim için ekledim -->
+  <a href="https://wa.me/905528864819" target="_blank" class="whatsapp-button" aria-label="WhatsApp ile iletişim">WhatsApp</a>
+
+  <!-- sayfa altı kısa blgi ekledim -->
+  <footer> <p>Çocuklar için psikolojik destek sunuyoruz.</p>
+    <address><b>Adres:</b>
+        Sahil Mah. 3232.Sokak No:19 Tatvan/Bitlis
+    </address>
+   
+  </footer>
+
+  <!-- Musik ekledim -->
+  <audio id="bg-music" loop>
+    <source src="Çocuklar için Dinlendirici Klasik Müzik [cOlCTajNzSI].mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- JavaScript -->
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('main > section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+        section.style.display = 'none';
+      });
+
+      const target = document.getElementById(id);
+      if (target) {
+        target.classList.add('active');
+        target.style.display = 'block';
+      }
+    }
+
+    // Sayfa yüklendiğinde sadece home görünür
+    window.onload = () => {
+      showSection('home');
+    };
+  </script>
+
+</body>
+</html>
+-----------------------------CSS----------------------------
+/* Genel ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: 'Fredoka One';
+  line-height: 1.6;
+  background-color: #f4f9f4;
+  color: #333;
+  padding: 0 10px;
+}
+.pedagog-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pedagog-image {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+ 
+}
+
+.pedagog-content p {
+  
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Başlangıçta tüm bölümler gizli */
+main section {
+  display: none;
+}
+
+/* Eğer URL'de #id varsa ona sahip bölüm gösterilir */
+main section:target {
+  display: block;
+}
+
+/* Sayfa açıldığında URL'de #id yoksa ilk bölüm (#home) gösterilir */
+main section:first-of-type {
+  display: block;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #90ebc9;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+header .logo {
+  width: 190px;
+ 
+  border-radius: 75px;
+}
+
+header h1 {
+  font-size:40px ;
+  color: #355c7d;
+ 
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Navigation */
+nav {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.navbar {
+ 
+  background-color: #c4ebe2;
+  padding: 10px;
+  border-radius: 15px;
+  display: flexinline-block;
+}
+
+.navbar li {
+  display: inline;
+  margin:  20px;
+}
+
+/* Menü linklerini href="#id" şeklinde yaptım! */
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #6c5b7b;
+}
+
+/* Ana içerik */
+main {
+    text-align: center;
+  padding: 20px 0;
+}
+button{
+    padding: 10px;
+    color: #25d366;
+    border-radius: 5px;
+}
+/* Bölümler */
+section {
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+/* Anasayfa görselleri */
+.home-images {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.home-images img {
+  width: 350px;
+  height: auto;
+   display: flex;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.highlight-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.highlight-links a {
+  text-decoration: none;
+  color: #355c7d;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.highlight-links a:hover {
+  text-decoration: underline;
+}
+
+/* Form alanı */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #a8e6cf;
+  color: #333;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #81c784;
+}
+
+/* Galeri */
+.memory-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.memory-card {
+  width: 200px;
+  background-color: #fceabb;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.memory-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* WhatsApp butonu */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e;
+}
+footer {
+  background-color: #a8e6cf;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #355c7d;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.ofis-gorsel {
+  width: 80%;         /* Genişliği %80 yapar, dilersen px de verebilirsin */
+  max-width: 600px;   /* En fazla 600px olur, ekran küçükse daha küçük kalır */
+  height: 350px;       /* Oranlı bir şekilde yükseklik ayarlanır */
+  border-radius: 10px; /* Köşeleri ovalleştirir (isteğe bağlı) */
+  display: block;
+  margin: 20px auto;  /* Ortalamak için */
+}
